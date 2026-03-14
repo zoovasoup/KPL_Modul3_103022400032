@@ -22,10 +22,7 @@ namespace Modul3_103022400032
 {
     public partial class Form1 : Form
     {
-        private String satuanAwal = "";
-        private String satuanAkhir = "";
-        private int nilaiAwal = 0;
-        private int nilaiAkhir = 0;
+        private double nilaiAkhir = 0;
 
         public Form1()
         {
@@ -43,8 +40,71 @@ namespace Modul3_103022400032
             }
 
 
+            if (comboBox1.Text.ToLower() == "celcius")
+            {
+                if (comboBox2.Text.ToLower() == "reamur")
+                {
+                    //setValue(celciusToReamur(Convert.ToDouble(textBox1.Text));
+                } else if (comboBox2.Text.ToLower() == "fahrenheit")
+                {
 
+                } else if (comboBox2.Text.ToLower() == "kelvin")
+                {
 
+                }
+
+            } else if (comboBox1.Text.ToLower() == "reamur")
+            {
+                if (comboBox2.Text.ToLower() == "celcius")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "fahrenheit")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "kelvin")
+                {
+
+                }
+
+            } else if (comboBox1.Text.ToLower() == "fahrenheit")
+            {
+                if (comboBox2.Text.ToLower() == "reamur")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "celcius")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "kelvin")
+                {
+
+                }
+
+            } else if (comboBox1.Text.ToLower() == "kelvin")
+            {
+                if (comboBox2.Text.ToLower() == "reamur")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "fahrenheit")
+                {
+
+                }
+                else if (comboBox2.Text.ToLower() == "celcius")
+                {
+
+                }
+
+            }
+        }
+
+        private void setValue(double value)
+        {
+            nilaiAkhir = value;
+            textBox2.Text = nilaiAkhir.ToString();
         }
 
         private double celciusToReamur(double input)
