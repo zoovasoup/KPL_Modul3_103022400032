@@ -8,6 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// celcius -> fahrenheit
+// celcius -> reamur
+// celcius -> kelvin 
+
+// fahrenheit -> celcius
+// fahrenheit -> reamur
+// fahrenheit -> kelvin
+
+
+
 namespace Modul3_103022400032
 {
     public partial class Form1 : Form
@@ -37,5 +47,61 @@ namespace Modul3_103022400032
 
         }
 
+        private double celciusToReamur(double input)
+        {
+            return 4.0 / 5.0 * input;
+        }
+
+        private double celciusToFahrenheit(double input)
+        {
+            return 9.0 / 5.0 * input + 32;
+        }
+
+        private double celciusToKelvin(double input)
+        {
+            return input + 273;
+        }
+        private double reamurToCelcius(double input)
+        {
+            return 5.0 / 4 / 0 * input;
+        }
+
+        private double reamurToFahrenheit(double input)
+        {
+            return 9.0 / 4.0 * input + 32;
+        }
+        private double reamurToKelvin(double input)
+        {
+            return 5.0 / 4.0 * input + 273;
+        }
+        private double fahrenheitToCelcius(double input)
+        {
+            return 5.0 / 9.0 * (input - 32);
+        }
+
+        private double fahrenheitToReamur(double input)
+        {
+            return 4.0 / 9.0 * (input - 32);
+        }
+
+        private double fahrenheitToKelvin(double input)
+        {
+            return fahrenheitToCelcius(input) + 273;
+        }
+
+        private double kelvinToCelcius(double input)
+        {
+            return input - 273;
+        }
+
+        private double kelvinToReamur(double input)
+        {
+            return 4.0 / 5.0 * (input - 273);
+        }
+
+        private double kelvinToFahrenheit(double input)
+        {
+            return (9.0 / 5.0 * (input - 273)) + 32;
+        }
     }
 }
