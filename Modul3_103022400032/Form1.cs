@@ -22,29 +22,20 @@ namespace Modul3_103022400032
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("masukkan angka yang valid");
+            } else if (comboBox1.Text == "" || comboBox2.Text == "")
+            {
+                MessageBox.Show("masukkan satuan terlebih dahulu");
+            }
+
+
+
 
         }
+
     }
 }
